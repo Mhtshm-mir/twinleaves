@@ -32,7 +32,7 @@ const App = () => {
 
     const fetchData = async (page) => {
       try {
-        const response = await axios.get(`https://thingproxy.freeboard.io/fetch/https://catalog-management-system-dev-ak3ogf6zea-uc.a.run.app/cms/products?page=${page}`);
+        const response = await axios.get(`https://catalog-management-system-dev-ak3ogf6zea-uc.a.run.app/cms/products?page=${page}`);
         
         const newData = response.data.products.map((el, i) => ({
           id: generateRandomKey(),
